@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>first-page</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="site_header">
+			<div class="container">
+				<nav class="navigation">
+					<ul>
+						<li><a href="#home" class="nav_item">Home</a></li>
+						<li><a href="#about" class="nav_item">About</a></li>
+						<li><a href="#services" class="nav_item">Services</a></li>
+						<li><a href="#contact_us" class="nav_item">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="home" id="home">
+			<h1>Home</h1>
+		</section>
+		<section class="about" id="about">
+			<h2>About</h2>
+		</section>
+		<section class="services" id="services">
+			<h2>Services</h2>
+		</section>
+		<section class="contact_us" id="contact_us">
+			<h2>Contact Us</h2>
+		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".nav_item").click(function(e){
+				  	e.preventDefault();
+				  	var elementId = $(this).attr("href");
+				   	$([document.documentElement, document.body]).animate({
+				       	scrollTop: $(elementId).offset().top
+				   	}, 1000);
+			 	});
+			});
+		</script>
+	</body>
+</html>

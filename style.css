@@ -1,0 +1,75 @@
+*{
+	box-sizing: border-box;
+	font-family: arial;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.site_header{
+	background-color: #c583e4;
+	padding: 5px 0;
+	position: fixed;
+	left: 0;
+    right: 0;
+    top: 0;
+}
+.navigation ul{
+	display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+.navigation ul li{
+	margin-right: 20px;
+}
+.navigation ul li a{
+	color: #000;
+}
+.home{
+	background-color: #e44b5a;
+	height: 100vh;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.home h1{
+	margin: 0;
+}
+.about{
+	background-color: #b0e44b;
+	height: 100vh;
+	justify-content: center;
+    align-items: center;
+    display: flex;	
+}
+.about h2{
+	margin: 0;
+}
+.services{
+	background-color: #8f8af8;
+	height: 100vh;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.services h2{
+	margin: 0;
+}
+.contact_Us{
+	background-color: #69c8ef;
+	height: 100vh;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contact_Us h2{
+	margin: 0;
+}
